@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando o DOM</title>
+</head>
+<style>
+    body{
+        background-color: rgb(86, 147, 175);
+        color: white;
+    }
+</style>
+<body>
+    <h1>Iniciando estudo DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="caixa-1">Clique em mim!</div>
+    <div class="caixa-2">Clique em mim!</div>
+    <script>
+        /*
+        var b = document.body
+        //b.style.background='blue'
+        var a = document.getElementsByTagName('p')[1]
+        window.document.write('Está escrito assim: '+a.innerText)
+        var caixa = document.getElementBy('caixa-1')
+        caixa.style.color='blue'
+        caixa.innerText='Eu sou o Fernando!'
+        //window.document.getElementById('caixa-1').innerText='Eu sou o Fernando'
+        */
+        var box = document.querySelector('div#caixa-1')
+        box.innerText='Fernando'
+        var box2 = document.querySelector('div.caixa-2')
+        box2.style.background='green'
+    </script>
+</body>
+</html>
