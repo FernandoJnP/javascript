@@ -1,6 +1,7 @@
 let num = document.querySelector('#texnum')
 let lista = document.querySelector('#selnum')
 let res = document.querySelector('#res')
+let res = document.getElementById
 let valores = []
 
 function isNumero(n){
