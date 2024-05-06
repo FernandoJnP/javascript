@@ -34,5 +34,20 @@ function draw(x,y){
     let pointX = x - screen.offsetLeft;
     let pointY = y - screen.offsetTop;
 
-    
+    ctx.beginPath();
+    ctx.lineWidth = 5;
+    ctx.lineJoin = "round";
+    ctx.moveTo(mouseX, mouseY);
+    ctx.lineTo(pointX, pointY);
+    ctx.closePath();
+    ctx.strokesStyle = defaultColor;
+    ctx.stroke();
+
+    mouseX = pointX;
+    mouseY = pointY;
 }
+
+function clearBoard(){
+    ctx.setTransform(1,0,0,1,0,0);
+    ctx.clearReact(0,0,ctx.canvas.width, ctx.canvas.height);
+    }
